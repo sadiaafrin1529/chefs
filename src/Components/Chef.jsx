@@ -6,7 +6,8 @@ const Chef = () => {
     const [info,setInfo]= useState([])
      
     useEffect(()=>{
-        fetch('https://server-chef-sadiaafrin1529.vercel.app/chefRecipe')
+        // fetch('http://localhost:4000/chefRecipe')
+        fetch('http://localhost:4000/chefRecipe')
         .then(res=>res.json())
         .then(data=>setInfo(data))
     },[])
@@ -17,11 +18,15 @@ const Chef = () => {
        <Container>
          <Container >
             <Row >
+            <h1 style={{  fontFamily: "Lucida Console, Courier, monospace"}} className='mx-auto mt-3 text-center font-bold'>Chefs Information</h1>
+            <p style={{ fontFamily: 'Times,  Georgia, serif' }} className='text-center'>
+        Here you can see our chefs information
+        </p>
             {
                 info.map(singleData => <Col md={4} key={singleData.id} mx-auto className="g-4">
-                <div className="mt-5">
-                  <div className="card">
-                    <img src={singleData.picture_link} className="card-img-top" alt="..." />
+                <div style={{ fontFamily: "Times,  Georgia, serif"}} className="mt-5">
+                  <div style={{height:"550px"}} className="card">
+                    <img style={{height:"300px"}} src={singleData.picture_link} className="card-img-top " alt="..." />
                     <div className="card-body">
                         <h5>{singleData.name}</h5>
                       <Link to={`/chef/${singleData.id}`} style={{textDecoration:'none'}}><h5 className="card-title">View Recipe</h5></Link>

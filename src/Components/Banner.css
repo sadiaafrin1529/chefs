@@ -1,0 +1,43 @@
+.banner{
+  position: relative;
+  background: url('../img/chefcook.jpg');
+  min-height: 65vh;
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0 200px;
+  border-radius: 20px;
+}
+.banner h2{
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  font-weight: 1000;
+  color: azure;
+  text-transform: uppercase;
+}
+.banner p{
+  margin: 1em 0 0;
+  padding: 0;
+  font-size: 1.2em;
+  
+  color: azure;
+  text-transform: uppercase;
+
+
+}
+.arrow:hover{
+transform: 360;
+}
+
+@media (max-width: 768px){
+  .banner{
+    
+  padding:  200px 0;
+  }
+  .banner h2{
+font-size: 1.8em;
+  }
+  .banner p{
+    font-size: 1em;
+  }
+}

@@ -3,10 +3,10 @@ import Login from './Components/Login';
 import Registration from './Components/Registration';
 
 import { createBrowserRouter } from "react-router-dom";
-import SingleChef from "./Components/SingleChef";
-import PrivateRoute from "./Components/PrivateRoute";
-import Error from "./Components/Error";
 import Bolg from "./Components/Bolg";
+import Error from "./Components/Error";
+import PrivateRoute from "./Components/PrivateRoute";
+import SingleChef from "./Components/SingleChef";
 
 const router = createBrowserRouter([
     {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     {
         path:'/chef/:id',
         element:<PrivateRoute><SingleChef /></PrivateRoute>,
-        loader:({params})=> fetch(`https://server-chef-sadiaafrin1529.vercel.app/chefRecipe/${params.id}`)
+        loader:({params})=> fetch(`http://localhost:4000/chefRecipe/${params.id}`)
     },
     {
         path:'/login',

@@ -1,6 +1,6 @@
 
 
-Welcome to the Indian Cuisine Recipes Website! This website showcases the recipes of Indian cuisine's most experienced and renowned chefs. Users can view the recipes of their favorite Indian chefs and add them to their favorites list.
+Welcome to the  Cuisine Recipes Website! This website showcases the recipes of londonn cuisine's most experienced and renowned chefs. Users can view the recipes of their favorite londonn chefs and add them to their favorites list.
 
 ## Live Site 
 ## https://chef-recipe-e10c5.web.app/
